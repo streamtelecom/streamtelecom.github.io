@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport"></meta>
-<title>Stream Telecom - Mapper</title>
+<title>Stream Telecom</title>
 <style type="text/css">
 html, body, #googft-mapCanvas {
   height: 100%;
@@ -31,8 +31,8 @@ html, body, #googft-mapCanvas {
     mapDiv.style.width = isMobile ? '100%' : '500px';
     mapDiv.style.height = isMobile ? '100%' : '300px';
     var map = new google.maps.Map(mapDiv, {
-      center: new google.maps.LatLng(-21.204381896007924, -47.774755189134225),
-      zoom: 13,
+      center: new google.maps.LatLng(-21.140347109966005, -47.98288043701655),
+      zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
     map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push(document.getElementById('googft-legend-open'));
@@ -42,8 +42,8 @@ html, body, #googft-mapCanvas {
       map: map,
       heatmap: { enabled: false },
       query: {
-        select: "col9",
-        from: "1AqmNcxq9kTZYRuaXY0VOa5y2yK34UIhN6mEwl4gV",
+        select: "col19",
+        from: "17nMUoP6uSxgHO06mFQr6luVmLJwQmu00llswMaus",
         where: ""
       },
       options: {
@@ -78,3 +78,4 @@ html, body, #googft-mapCanvas {
   <div id="googft-mapCanvas"></div>
 </body>
 </html>
+
