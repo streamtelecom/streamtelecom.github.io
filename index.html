@@ -6,12 +6,6 @@
 <style type="text/css">
 html, body, #googft-mapCanvas {
   height: 100%;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-}
-#googft-mapCanvas {
-  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -30,8 +24,8 @@ html, body, #googft-mapCanvas {
       viewport.setAttribute('content', 'initial-scale=1.0, user-scalable=no');
     }
     var mapDiv = document.getElementById('googft-mapCanvas');
-    mapDiv.style.width = isMobile ? '100%' : '500px';
-    mapDiv.style.height = isMobile ? '100%' : '300px';
+    mapDiv.style.width = isMobile ? '100%' : '100%';
+    mapDiv.style.height = isMobile ? '100%' : '100%';
     var map = new google.maps.Map(mapDiv, {
       center: new google.maps.LatLng(-21.140347109966005, -47.98288043701655),
       zoom: 15,
